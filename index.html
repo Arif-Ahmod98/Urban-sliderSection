@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Urban-webpage</title>
+    <script src="https://kit.fontawesome.com/ba2b6da4f2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="menuLis">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Category</a></li>
+          </ul>
+          <img src="images/cart.png" class="cart" />
+        </nav>
+        <i class="fas fa-bars" id="menu"></i>
+
+        <div class="header-text">
+          <button type="button" id="button">2021 Collections</button>
+          <h1>
+            You should always <br />
+            feel pretty
+          </h1>
+          <p>Clothes that are sure to heat up your winter.</p>
+          <div class="arrow">
+            <img src="images/back-arrow.png" />
+            <img src="images/next-arrow.png" />
+          </div>
+        </div>
+      </div>
+      <img src="images/img.png" id="slider-img" />
+      <ul id="social-links">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </header>
+
+    <script>
+      let menu = document.getElementById("menu");
+      let menuLis = document.getElementById("menuLis");
+      menuLis.style.right = "-290px";
+      menu.onclick = function () {
+        if (menuLis.style.right == "-290px") {
+          menuLis.style.right = "-50px";
+        } else {
+          menuLis.style.right = "-290px";
+        }
+      };
+    </script>
+  </body>
+</html>
